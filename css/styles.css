@@ -339,19 +339,13 @@ ul,ol {
     background-color: #FFFFFF;
     border: 1px solid var(--icons-fill);
     border-radius: 4px;
+    fill: var(--icons-fill);
 }
 .client-link:hover,
 .client-link:focus {
     border: 1px solid var(--accent-cl);
-}
-.client-link .client-icon:hover,
-.client-link.client-icon:focus {
     fill: var(--accent-cl);
 }
-.client-icon {
-    fill: var(--icons-fill);
-}
-
 
 /* Footer */
 .page-footer {
@@ -361,8 +355,7 @@ ul,ol {
 }
 .footer-container {
     display: flex;
-    align-items:center;
-    justify-content: left;
+    align-items: baseline
 }
 .address-container {
     margin-right: 70px;
@@ -488,16 +481,19 @@ ul,ol {
     flex-basis: calc(100%/3-30px);
     margin: 30px 0 0 30px;
 }
-.activities-item:hover,
-.activities-item:focus {
+.activities-link {
+    display: block;
+}
+.activities-link:hover,
+.activities-link:focus {
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 .activities-card {
     padding: 20px 24px;
     border: 1px solid rgba(238, 238, 238, 1);
     border-top: none;
-    
 }
+
     
 .activities-example-title { 
     color: var(--title-txt-cl);
